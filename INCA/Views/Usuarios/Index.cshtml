@@ -1,0 +1,107 @@
+﻿@model IEnumerable<INCA.Models.Empleados>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Apellido_paterno)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Apellido_Materno)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nombres)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.password)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fecha_alta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FkId_Estatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fkid_Departamento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fkid_Sucursal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fkid_Roles)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fecha_Modificacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User_Crea)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User_Modifica)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellido_paterno)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellido_Materno)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombres)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fecha_alta)
+            </td>
+            <td>
+                    @Html.DisplayFor(modelItem => item.FkId_Estatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fkid_Departamento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fkid_Sucursal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fkid_Roles)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fecha_Modificacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User_Crea)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User_Modifica)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id_empleadopk">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id_empleadopk">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id_empleadopk">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

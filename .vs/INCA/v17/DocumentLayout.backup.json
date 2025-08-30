@@ -1,0 +1,155 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DOCUMENTACION\\INCA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5A82CF3A-9169-4F6B-851E-D42B2E741855}|INCA\\INCA.csproj|d:\\documentacion\\inca\\inca\\controllers\\mantenimientocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A82CF3A-9169-4F6B-851E-D42B2E741855}|INCA\\INCA.csproj|solutionrelative:inca\\controllers\\mantenimientocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A82CF3A-9169-4F6B-851E-D42B2E741855}|INCA\\INCA.csproj|d:\\documentacion\\inca\\inca\\controllers\\equiposcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A82CF3A-9169-4F6B-851E-D42B2E741855}|INCA\\INCA.csproj|solutionrelative:inca\\controllers\\equiposcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A82CF3A-9169-4F6B-851E-D42B2E741855}|INCA\\INCA.csproj|d:\\documentacion\\inca\\inca\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5A82CF3A-9169-4F6B-851E-D42B2E741855}|INCA\\INCA.csproj|solutionrelative:inca\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A82CF3A-9169-4F6B-851E-D42B2E741855}|INCA\\INCA.csproj|d:\\documentacion\\inca\\inca\\models\\mantenimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A82CF3A-9169-4F6B-851E-D42B2E741855}|INCA\\INCA.csproj|solutionrelative:inca\\models\\mantenimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A82CF3A-9169-4F6B-851E-D42B2E741855}|INCA\\INCA.csproj|d:\\documentacion\\inca\\inca\\controllers\\empleadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A82CF3A-9169-4F6B-851E-D42B2E741855}|INCA\\INCA.csproj|solutionrelative:inca\\controllers\\empleadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A82CF3A-9169-4F6B-851E-D42B2E741855}|INCA\\INCA.csproj|d:\\documentacion\\inca\\inca\\models\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A82CF3A-9169-4F6B-851E-D42B2E741855}|INCA\\INCA.csproj|solutionrelative:inca\\models\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A82CF3A-9169-4F6B-851E-D42B2E741855}|INCA\\INCA.csproj|d:\\documentacion\\inca\\inca\\models\\equipos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A82CF3A-9169-4F6B-851E-D42B2E741855}|INCA\\INCA.csproj|solutionrelative:inca\\models\\equipos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A82CF3A-9169-4F6B-851E-D42B2E741855}|INCA\\INCA.csproj|d:\\documentacion\\inca\\inca\\data\\incacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A82CF3A-9169-4F6B-851E-D42B2E741855}|INCA\\INCA.csproj|solutionrelative:inca\\data\\incacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmpleadosController.cs",
+              "DocumentMoniker": "D:\\DOCUMENTACION\\INCA\\INCA\\Controllers\\EmpleadosController.cs",
+              "RelativeDocumentMoniker": "INCA\\Controllers\\EmpleadosController.cs",
+              "ToolTip": "D:\\DOCUMENTACION\\INCA\\INCA\\Controllers\\EmpleadosController.cs",
+              "RelativeToolTip": "INCA\\Controllers\\EmpleadosController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-30T07:01:50.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MantenimientoController.cs",
+              "DocumentMoniker": "D:\\DOCUMENTACION\\INCA\\INCA\\Controllers\\MantenimientoController.cs",
+              "RelativeDocumentMoniker": "INCA\\Controllers\\MantenimientoController.cs",
+              "ToolTip": "D:\\DOCUMENTACION\\INCA\\INCA\\Controllers\\MantenimientoController.cs",
+              "RelativeToolTip": "INCA\\Controllers\\MantenimientoController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T05:48:13.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Mantenimientos.cs",
+              "DocumentMoniker": "D:\\DOCUMENTACION\\INCA\\INCA\\Models\\Mantenimientos.cs",
+              "RelativeDocumentMoniker": "INCA\\Models\\Mantenimientos.cs",
+              "ToolTip": "D:\\DOCUMENTACION\\INCA\\INCA\\Models\\Mantenimientos.cs",
+              "RelativeToolTip": "INCA\\Models\\Mantenimientos.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T05:38:35.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "INCAContext.cs",
+              "DocumentMoniker": "D:\\DOCUMENTACION\\INCA\\INCA\\Data\\INCAContext.cs",
+              "RelativeDocumentMoniker": "INCA\\Data\\INCAContext.cs",
+              "ToolTip": "D:\\DOCUMENTACION\\INCA\\INCA\\Data\\INCAContext.cs",
+              "RelativeToolTip": "INCA\\Data\\INCAContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T05:36:39.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Equipos.cs",
+              "DocumentMoniker": "D:\\DOCUMENTACION\\INCA\\INCA\\Models\\Equipos.cs",
+              "RelativeDocumentMoniker": "INCA\\Models\\Equipos.cs",
+              "ToolTip": "D:\\DOCUMENTACION\\INCA\\INCA\\Models\\Equipos.cs",
+              "RelativeToolTip": "INCA\\Models\\Equipos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T03:24:43.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Empleados.cs",
+              "DocumentMoniker": "D:\\DOCUMENTACION\\INCA\\INCA\\Models\\Empleados.cs",
+              "RelativeDocumentMoniker": "INCA\\Models\\Empleados.cs",
+              "ToolTip": "D:\\DOCUMENTACION\\INCA\\INCA\\Models\\Empleados.cs",
+              "RelativeToolTip": "INCA\\Models\\Empleados.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T21:39:06.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\DOCUMENTACION\\INCA\\INCA\\appsettings.json",
+              "RelativeDocumentMoniker": "INCA\\appsettings.json",
+              "ToolTip": "D:\\DOCUMENTACION\\INCA\\INCA\\appsettings.json",
+              "RelativeToolTip": "INCA\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-17T22:10:18.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EquiposController.cs",
+              "DocumentMoniker": "D:\\DOCUMENTACION\\INCA\\INCA\\Controllers\\EquiposController.cs",
+              "RelativeDocumentMoniker": "INCA\\Controllers\\EquiposController.cs",
+              "ToolTip": "D:\\DOCUMENTACION\\INCA\\INCA\\Controllers\\EquiposController.cs",
+              "RelativeToolTip": "INCA\\Controllers\\EquiposController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T03:14:11.294Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

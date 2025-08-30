@@ -1,0 +1,776 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "INCA",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Empleados": {
+      "get": {
+        "tags": [
+          "Empleados"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Empleados"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Empleados"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Empleados"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Empleados/{id}": {
+      "get": {
+        "tags": [
+          "Empleados"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Empleados"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Empleados"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Empleados"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Empleados/Agregarempleado": {
+      "post": {
+        "tags": [
+          "Empleados"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Empleados"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Empleados"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Empleados"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Empleados"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Empleados"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Empleados"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Empleados"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Empleados/actualizarempleado/{id}": {
+      "put": {
+        "tags": [
+          "Empleados"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Empleados"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Empleados"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Empleados"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Empleados"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Equipos": {
+      "get": {
+        "tags": [
+          "Equipos"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Equipos"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Equipos"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Equipos"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Equipos/Buscarinv/{id}": {
+      "get": {
+        "tags": [
+          "Equipos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Equipos"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Equipos"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Equipos"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Equipos/AgregarEquipo": {
+      "post": {
+        "tags": [
+          "Equipos"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Equipos"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Equipos"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Equipos"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Equipos"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Equipos"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Equipos"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Equipos"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Equipos/Acutalizarequipo/{id}": {
+      "patch": {
+        "tags": [
+          "Equipos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Operation"
+                }
+              }
+            },
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Operation"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Operation"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Operation"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Equipos/actualizarcompleto/{id}": {
+      "put": {
+        "tags": [
+          "Equipos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Equipos"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Equipos"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Equipos"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Equipos"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Mantenimiento": {
+      "get": {
+        "tags": [
+          "Mantenimiento"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Mantenimientos"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Mantenimientos"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Mantenimientos"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Empleados": {
+        "type": "object",
+        "properties": {
+          "id_empleadopk": {
+            "type": "string",
+            "nullable": true
+          },
+          "apellido_paterno": {
+            "type": "string",
+            "nullable": true
+          },
+          "apellido_Materno": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombres": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "fecha_alta": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "fkId_Estatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "fkid_Departamento": {
+            "type": "string",
+            "nullable": true
+          },
+          "fkid_Sucursal": {
+            "type": "string",
+            "nullable": true
+          },
+          "fkid_Roles": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fecha_Modificacion": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "user_Crea": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "user_Modifica": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Equipos": {
+        "type": "object",
+        "properties": {
+          "id_InventarioPK": {
+            "type": "string",
+            "nullable": true
+          },
+          "marca": {
+            "type": "string",
+            "nullable": true
+          },
+          "modelo": {
+            "type": "string",
+            "nullable": true
+          },
+          "color": {
+            "type": "string",
+            "nullable": true
+          },
+          "num_serie": {
+            "type": "string",
+            "nullable": true
+          },
+          "procesador": {
+            "type": "string",
+            "nullable": true
+          },
+          "memoria": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipo_HDD": {
+            "type": "string",
+            "nullable": true
+          },
+          "sistema_operativo": {
+            "type": "string",
+            "nullable": true
+          },
+          "observacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "fecha_Compra": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "fecha_baja": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "motivo_Baja": {
+            "type": "string",
+            "nullable": true
+          },
+          "fkid_Tipo": {
+            "type": "string",
+            "nullable": true
+          },
+          "fkid_Estatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "asignado": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "fecha_alta": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "fecha_modificacion": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "user_modifica": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "user_crea": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Mantenimientos": {
+        "type": "object",
+        "properties": {
+          "fK_Empleado_registra": {
+            "type": "string",
+            "nullable": true
+          },
+          "fKid_Inventario": {
+            "type": "string",
+            "nullable": true
+          },
+          "descripcion_falla": {
+            "type": "string",
+            "nullable": true
+          },
+          "fecha_registro": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "fK_Empleado_Asignado": {
+            "type": "string",
+            "nullable": true
+          },
+          "fecha_Mantenimiento": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "fkid_Estatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "descripcion_Solucion": {
+            "type": "string",
+            "nullable": true
+          },
+          "fecha_Realizacion": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "fk_Empleado_Realiza_Mtto": {
+            "type": "string",
+            "nullable": true
+          },
+          "imagen_recep": {
+            "type": "string",
+            "nullable": true
+          },
+          "imagen_entrega": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Operation": {
+        "type": "object",
+        "properties": {
+          "operationType": {
+            "$ref": "#/components/schemas/OperationType"
+          },
+          "path": {
+            "type": "string",
+            "nullable": true
+          },
+          "op": {
+            "type": "string",
+            "nullable": true
+          },
+          "from": {
+            "type": "string",
+            "nullable": true
+          },
+          "value": {
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "OperationType": {
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

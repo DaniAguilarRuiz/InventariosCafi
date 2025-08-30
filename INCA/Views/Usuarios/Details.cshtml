@@ -1,0 +1,96 @@
+﻿@model INCA.Models.Empleados
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Usuarios</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Apellido_paterno)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Apellido_paterno)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Apellido_Materno)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Apellido_Materno)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.nombres)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.nombres)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.email)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.password)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.password)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Fecha_alta)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Fecha_alta)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FkId_Estatus)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FkId_Estatus)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Fkid_Departamento)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Fkid_Departamento)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Fkid_Sucursal)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Fkid_Sucursal)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Fkid_Roles)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Fkid_Roles)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Fecha_Modificacion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Fecha_Modificacion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.User_Crea)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.User_Crea)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.User_Modifica)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.User_Modifica)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id_empleadopk">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
