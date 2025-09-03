@@ -120,7 +120,8 @@ namespace INCA
             }
             var equipoexist = await _context.Equipos.FindAsync(id);
 
-            if (equipoexist==null){
+            if (equipoexist == null)
+            {
                 return NotFound("INVENTARIO NO ENCONTRADO");
             }
 
@@ -132,7 +133,7 @@ namespace INCA
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            
+
             await _context.SaveChangesAsync();
 
             return Ok(equipoexist);
@@ -140,7 +141,7 @@ namespace INCA
 
 
         [HttpPut("actualizarcompleto/{id}")]
-        public async Task<ActionResult> Actualizarequipocompleto (String id, [FromBody] Equipos actualizareq)
+        public async Task<ActionResult> Actualizarequipocompleto(String id, [FromBody] Equipos actualizareq)
         {
             if (id != actualizareq.Id_InventarioPK)
             {
@@ -153,22 +154,22 @@ namespace INCA
 
                 return NotFound("EQUIPO NO ENCONTRADO");
             }
-                equipoexiste.Marca = actualizareq.Marca;
-                equipoexiste.Modelo = actualizareq.Modelo;
-                equipoexiste.Color = actualizareq.Color;
-                equipoexiste.Num_serie = actualizareq.Num_serie;
-                equipoexiste.Procesador = actualizareq.Procesador;
-                equipoexiste.Memoria = actualizareq.Memoria;
-                equipoexiste.tipo_HDD = actualizareq.tipo_HDD;
-                equipoexiste.Sistema_operativo = actualizareq.Sistema_operativo;
-                equipoexiste.observacion = actualizareq.observacion;
-                equipoexiste.fecha_Compra = actualizareq.fecha_Compra;
+            equipoexiste.Marca = actualizareq.Marca;
+            equipoexiste.Modelo = actualizareq.Modelo;
+            equipoexiste.Color = actualizareq.Color;
+            equipoexiste.Num_serie = actualizareq.Num_serie;
+            equipoexiste.Procesador = actualizareq.Procesador;
+            equipoexiste.Memoria = actualizareq.Memoria;
+            equipoexiste.tipo_HDD = actualizareq.tipo_HDD;
+            equipoexiste.Sistema_operativo = actualizareq.Sistema_operativo;
+            equipoexiste.observacion = actualizareq.observacion;
+            equipoexiste.fecha_Compra = actualizareq.fecha_Compra;
 
             try
             {
                 await _context.SaveChangesAsync();
             }
-            catch(DbUpdateException ex)
+            catch (DbUpdateException ex)
             {
                 return StatusCode(500, $"Error al actualizar en base de datos: {ex.InnerException?.Message ?? ex.Message}");
             }
@@ -177,8 +178,32 @@ namespace INCA
 
         }
 
+
+        [HttpPatch("Actualizarfecha/{id}")]
+        public async Task<ActionResult> colocarfecha(string id)
+
+        {
+
+            var equipo = await _context.Equipos.FindAsync(id);
+
+            {
+                if (equipo == null)
+                {
+                    return BadRequest("INVENTARIO NO ENCONTRADO");
+
+                }
+                equipo.Fecha_modificacion = DateTime.Now;
+
+                await _context.SaveChangesAsync();
+
+                return Ok(equipo);
+            }
+
+
+        }
     }
 
+}
 
 
 
@@ -195,4 +220,4 @@ namespace INCA
 
 
     
-}
+

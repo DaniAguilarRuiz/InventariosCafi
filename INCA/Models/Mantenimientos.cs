@@ -6,6 +6,8 @@ namespace INCA.Models
     public class Mantenimientos
     {
         [Key]
+        public int Id_Mantenimiento { get; set; }
+
 
         public string? FK_Empleado_registra { get; set; }
 

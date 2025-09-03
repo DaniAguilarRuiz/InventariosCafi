@@ -5,6 +5,84 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Correos": {
+      "get": {
+        "tags": [
+          "Correos"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Correos"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Correos"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Correos"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Correos/buscarcorreo/{id}": {
+      "get": {
+        "tags": [
+          "Correos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Correos"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Correos"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Correos"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Empleados": {
       "get": {
         "tags": [
@@ -415,6 +493,28 @@
         }
       }
     },
+    "/api/Equipos/Actualizarfecha/{id}": {
+      "patch": {
+        "tags": [
+          "Equipos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Mantenimiento": {
       "get": {
         "tags": [
@@ -446,6 +546,243 @@
                   "items": {
                     "$ref": "#/components/schemas/Mantenimientos"
                   }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Mantenimiento/Buscarmant/{id}": {
+      "get": {
+        "tags": [
+          "Mantenimiento"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Mantenimientos"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Mantenimientos"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Mantenimientos"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Mantenimiento/newmant": {
+      "post": {
+        "tags": [
+          "Mantenimiento"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Mantenimientos"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Mantenimientos"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Mantenimientos"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Mantenimientos"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Mantenimientos"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Mantenimientos"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Mantenimientos"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Mantenimiento/editmant/{id}": {
+      "patch": {
+        "tags": [
+          "Mantenimiento"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Operation"
+                }
+              }
+            },
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Operation"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Operation"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Operation"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Mantenimientos"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Mantenimientos"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Mantenimientos"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Mantenimiento/actucommante/{id}": {
+      "put": {
+        "tags": [
+          "Mantenimiento"
+        ],
+        "parameters": [
+          {
+            "name": "ig",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Mantenimientos"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Mantenimientos"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Mantenimientos"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Mantenimientos"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Mantenimientos"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Mantenimientos"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Mantenimientos"
                 }
               }
             }
@@ -495,6 +832,66 @@
   },
   "components": {
     "schemas": {
+      "Correos": {
+        "type": "object",
+        "properties": {
+          "idcorreo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "asignado": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "usoGeneral": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "fechaAsignacion": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "deptoUsoGeneral": {
+            "type": "string",
+            "nullable": true
+          },
+          "usaEquipoComputo": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "estatus": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "fecha_creacion": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "user_crea": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "user_modifica": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "fecha_modificacion": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "Empleados": {
         "type": "object",
         "properties": {
@@ -657,6 +1054,10 @@
       "Mantenimientos": {
         "type": "object",
         "properties": {
+          "id_Mantenimiento": {
+            "type": "integer",
+            "format": "int32"
+          },
           "fK_Empleado_registra": {
             "type": "string",
             "nullable": true

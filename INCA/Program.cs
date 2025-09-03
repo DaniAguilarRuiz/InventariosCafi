@@ -6,6 +6,18 @@ builder.Services.AddDbContext<INCAContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("INCAContext") ?? throw new InvalidOperationException("Connection string 'INCAContext' not found.")));
 
 // Add services to the container.
+var origenesPermitidos = builder.Configuration.GetValue<string>("origenesPermitidos")!.Split(",");
+
+
+builder.Services.AddCors(opciones =>
+{
+    opciones.AddDefaultPolicy(politica =>
+    {
+        politica.WithOrigins(origenesPermitidos).AllowAnyHeader().AllowAnyMethod();
+    });
+});
+
+
 
 builder.Services.AddControllers()
     .AddNewtonsoftJson();
@@ -23,6 +35,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors();
 
 app.UseAuthorization();
 

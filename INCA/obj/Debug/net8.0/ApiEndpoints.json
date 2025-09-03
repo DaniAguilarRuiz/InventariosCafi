@@ -1,5 +1,51 @@
 [
   {
+    "ContainingType": "INCA.CorreosController",
+    "Method": "listacorreos",
+    "RelativePath": "api/Correos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[INCA.Models.Correos, INCA, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "INCA.CorreosController",
+    "Method": "busquedamail",
+    "RelativePath": "api/Correos/buscarcorreo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "INCA.Models.Correos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "INCA.EmpleadosController",
     "Method": "listaempleados",
     "RelativePath": "api/Empleados",
@@ -135,6 +181,22 @@
   },
   {
     "ContainingType": "INCA.EquiposController",
+    "Method": "colocarfecha",
+    "RelativePath": "api/Equipos/Actualizarfecha/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INCA.EquiposController",
     "Method": "Actequipos",
     "RelativePath": "api/Equipos/Acutalizarequipo/{id}",
     "HttpMethod": "PATCH",
@@ -217,6 +279,125 @@
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.IEnumerable\u00601[[INCA.Models.Mantenimientos, INCA, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "INCA.MantenimientoController",
+    "Method": "putmante",
+    "RelativePath": "api/Mantenimiento/actucommante/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ig",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "actumante",
+        "Type": "INCA.Models.Mantenimientos",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "INCA.Models.Mantenimientos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "INCA.MantenimientoController",
+    "Method": "Details",
+    "RelativePath": "api/Mantenimiento/Buscarmant/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "INCA.Models.Mantenimientos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "INCA.MantenimientoController",
+    "Method": "editmant",
+    "RelativePath": "api/Mantenimiento/editmant/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "patchmtto",
+        "Type": "Microsoft.AspNetCore.JsonPatch.Operations.Operation[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "INCA.Models.Mantenimientos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "INCA.MantenimientoController",
+    "Method": "Crear",
+    "RelativePath": "api/Mantenimiento/newmant",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mante",
+        "Type": "INCA.Models.Mantenimientos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "INCA.Models.Mantenimientos",
         "MediaTypes": [
           "text/plain",
           "application/json",

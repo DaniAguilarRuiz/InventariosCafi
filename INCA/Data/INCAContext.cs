@@ -20,5 +20,7 @@ namespace INCA.Data
 
         public DbSet<INCA.Models.Mantenimientos> Mantenimientos { get; set; } = default!;
 
+        public DbSet<INCA.Models.Correos> Correos { get; set; } = default;
+
     }
 }

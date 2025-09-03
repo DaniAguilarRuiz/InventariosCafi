@@ -533,3 +533,4 @@ D:\DOCUMENTACION\INCA\INCA\obj\Debug\net8.0\refint\INCA.dll
 D:\DOCUMENTACION\INCA\INCA\obj\Debug\net8.0\INCA.pdb
 D:\DOCUMENTACION\INCA\INCA\obj\Debug\net8.0\INCA.genruntimeconfig.cache
 D:\DOCUMENTACION\INCA\INCA\obj\Debug\net8.0\ref\INCA.dll
+D:\DOCUMENTACION\INCA\INCA\obj\Debug\net8.0\INCA.sourcelink.json
