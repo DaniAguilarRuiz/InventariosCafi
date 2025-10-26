@@ -534,3 +534,9 @@ D:\DOCUMENTACION\INCA\INCA\obj\Debug\net8.0\INCA.pdb
 D:\DOCUMENTACION\INCA\INCA\obj\Debug\net8.0\INCA.genruntimeconfig.cache
 D:\DOCUMENTACION\INCA\INCA\obj\Debug\net8.0\ref\INCA.dll
 D:\DOCUMENTACION\INCA\INCA\obj\Debug\net8.0\INCA.sourcelink.json
+D:\DOCUMENTACION\INCA\INCA\bin\Debug\net8.0\System.Data.SqlClient.dll
+D:\DOCUMENTACION\INCA\INCA\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+D:\DOCUMENTACION\INCA\INCA\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+D:\DOCUMENTACION\INCA\INCA\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+D:\DOCUMENTACION\INCA\INCA\bin\Debug\net8.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+D:\DOCUMENTACION\INCA\INCA\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll

@@ -515,6 +515,18 @@
         }
       }
     },
+    "/api/Graficos/totaldeequipos": {
+      "get": {
+        "tags": [
+          "Graficos"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Mantenimiento": {
       "get": {
         "tags": [

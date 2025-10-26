@@ -269,6 +269,16 @@
     ]
   },
   {
+    "ContainingType": "INCA.Controllers.GraficosController",
+    "Method": "Getequipos",
+    "RelativePath": "api/Graficos/totaldeequipos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "INCA.MantenimientoController",
     "Method": "listamtto",
     "RelativePath": "api/Mantenimiento",
